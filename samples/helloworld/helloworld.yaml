@@ -82,7 +82,7 @@ spec:
   http:
   - match:
     - uri:
-        exact: /hello
+        exact: /Hola
     route:
     - destination:
         host: helloworld
