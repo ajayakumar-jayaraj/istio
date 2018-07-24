@@ -18,7 +18,7 @@ import os, math
 from flask import Flask, request
 app = Flask(__name__)
 
-@app.route('/hello')
+@app.route('/Hola')
 def hello():
     version = os.environ.get('SERVICE_VERSION')
 
@@ -27,7 +27,7 @@ def hello():
     for i in range(0, 1000000):
 	    x = x + math.sqrt(x)
 
-    return 'Hello version: %s, instance: %s\n' % (version, os.environ.get('HOSTNAME'))
+    return '* * Hola version: %s, instance: %s\n' % (version, os.environ.get('HOSTNAME'))
 
 @app.route('/health')
 def health():
